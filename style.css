@@ -1,83 +1,257 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .container{
-    width: 1200;
-    margin: auto;
+    width: 1280px;
+    margin: 0 auto;
 }
-body{
-    font-family: "ABeeZee", sans-serif;
-}
-nav{
-    background-color: green;
-    padding: 20px;
-    color: white;
-}
-.nav_main{
+.section1{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 50px;
     
-   
-  }
-.left_nav{
-    text-transform: uppercase;
-    font-size: large;
 }
-.middle_nav ul{
-    display: flex;
-    gap: 80px;
-  }
-.middle_nav ul li{
-    list-style: none;
-    text-transform: capitalize;
+.btn1 button{
+     padding: 10px 25px;
+     border: none;
+     border-radius: 5px;
+     position: relative;
+     color: black;
+     z-index: 2;
+     overflow: hidden;
+     background-color: rgb(142, 181, 215);
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
 }
-.right_nav{
-    text-transform: capitalize;
-    display: flex;
-    gap: 10px;
-    }
-    .right_nav i{
-        height: 25px;
-        width: 25px;
-        border: 2px solid white;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.btn1 button::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(123, 108, 33);
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+.btn1 button:hover::after{
+    right: 200px;
 
-    }
-    .main_div1{
-        display: flex;
-        color: white;
-        padding: 20px;
-        justify-content: space-between;
-        background-color: green;
-        
-    }
-    .left1{
-        height: 100%;
-        width: 5%;
-     }
+}
 
-    .middle1{
-        height: 100%;
-        width: 30%;
-        text-align: left;
-       
-     }
-     .p2{
-        font-size: 40px;
-     }
-     .p3{
-        font-size: 10px;
-     }
-     .right1{
-        height: 100%;
-        width: 5%;
-       
-       
-       
-      
-     }
+.btn1 button::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(123, 108, 33);
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+.btn1 button:hover::before{
+    left: 200px;
+}
+.btn2 button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    color: white;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgb(35, 66, 92);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+
+.btn2 button::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(12, 241, 65);
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+.btn2 button:hover::after{
+    top: 200px;
+}
+
+.btn2 button::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(12, 241, 65);;
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+.btn2 button:hover::before{
+    bottom: 200px;
+}
+
+.btn3 button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    color: black;
+    z-index: 2;
+    overflow: hidden;
+    background-color: bisque;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.btn3 button::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(28, 120, 219);
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+.btn3 button:hover::after{
+    top: 200px;
+}
+
+.btn4 button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    color: black;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgb(239, 28, 42);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.btn4 button::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(211, 191, 191);
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+.btn4 button:hover::before{
+    bottom: 200px;
+}
+
+.btn5 button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    color: black;
+    z-index: 2;
+    overflow: hidden;
+    background-color: whitesmoke;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.btn5 button::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(244, 10, 10);
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+.btn5 button:hover::before{
+    right: 200px;
+}
+
+.btn6 button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    color: black;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgb(11, 140, 246);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.btn6 button::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(232, 244, 10);
+    z-index: -1;
+    transition: 5s;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+}
+
+.btn6 button:hover::before{
+    left: 200px;
+}
